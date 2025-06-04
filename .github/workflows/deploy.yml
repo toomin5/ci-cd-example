@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Echo Test
+        run: echo ${{ vars.TEST }}
+
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.6
         with:
