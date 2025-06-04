@@ -1,8 +1,4 @@
 import express, { Application, Request, Response } from "express";
-import dotenv from "dotenv";
-
-// 환경 변수 로드
-dotenv.config();
 
 const app: Application = express();
 const PORT = process.env.PORT || 3001;
